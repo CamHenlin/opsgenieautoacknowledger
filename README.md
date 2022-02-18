@@ -1,8 +1,8 @@
 # OpsGenie Auto Acknowledger
 
-Let's say you're too busy for the alerts, or the alerts won't stop, or people don't care about the alerts, or you don't have time for the alerts or stuff is on fire and you really need a nap. 
+Let's say you're too busy for the alerts, or the alerts won't stop, or people don't care about the alerts, or you don't have time for the alerts, or stuff is on fire and you really need a nap. 
 
-I'm not here to judge, I'm here to help. Once installed this script will auto-respond to OpsGenie SMS messages with an ACK command, acknowledging the alert and giving you some peace.
+I'm not here to judge, I'm here to help. Once running, this script will auto-respond to OpsGenie SMS messages with an ACK command, acknowledging the alert and giving you some peace.
 
 ### Requirements
 
