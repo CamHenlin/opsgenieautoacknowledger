@@ -1,0 +1,15 @@
+{
+  "name": "opsgenieautoacknowledger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "osa2": "^0.2.3",
+    "sqlite3": "^5.0.2"
+  }
+}
