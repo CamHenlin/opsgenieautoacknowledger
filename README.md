@@ -17,6 +17,7 @@ Just a few easy steps!
 - Run the app with `BASE_URL= MESSAGE_MUST_CONTAIN= node index`, with `BASE_URL` and `MESSAGE_MUST_CONTAIN` set
 
 `BASE_URL` is the URL that this script will look for in the message to extract the OpsGenie Alert ID to acknowledge. This is different for every OpsGenie account.
+
 `MESSAGE_MUST_CONTAIN` is an optional env var that will require that any message that gets responded to contain a specific string. That way if someone is texting you about an alert URL, you don't automatically respond with "ACK alertId"
 
 Enjoy!
