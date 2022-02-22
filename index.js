@@ -69,7 +69,7 @@ function checkMessageText(messageId) {
                     }
                 }
 
-                const alertId = rowText.split(BASE_URL)[1]
+                const alertId = rowText.split(BASE_URL)[1].split(` `)[0] // for some reason I get a " ." at the end of the strings
 
                 sendMessage(row.id, `ACK ${alertId}`)
 			}
@@ -77,8 +77,19 @@ function checkMessageText(messageId) {
 	});
 }
 
+let messageCache = {}
+
 // iMessage;-;${selectedChatId}
 const sendMessage = (SELECTED_CHATTER, message) => {
+
+    if (messageCache[message]) {
+
+        console.log(`${message} already sent, abort`)
+
+        return
+    }
+
+    messageCache[message] = true
 
     SELECTED_CHATTER = `SMS;-;${SELECTED_CHATTER}`
 
